@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card " >
+                <div class="seller">
+                    <div class="sign-up">
+                        <h2 class="card-header ">Login</h2>
+                        <div class="card-body">
+
+            <form [formGroup]=" LoginFrmList">
+                <div class="form-group">
+                    <label class="form-label">Enter Registered Email</label>
+                    <input type="text" class="form-control" ngmodel name="email" formControlName="email"
+                     id=""   placeholder="Enter Email Id">
+                </div><br>
+                <div class="form-group">
+                    <label class="form-label">Enter Password</label>
+                    <input type="text" class="form-control" ngmodel name="pwd" formControlName="pwd"
+                       id="" placeholder="Enter Password">
+                </div><br>
+                <button  type="submit"  class="form-control btn btn-primary text-center" [routerLink]="'/HomePg'" > Login</button><br>
+                <!-- <a  class="text-info mt-5" [routerLink]="'/RegisterPg'" >Register</a>
+                <a [routerLink]="'/LogoutPg'" class="text-info m-5">Forgot Password</a>
+     -->
+            </form>
+            
+        </div>
+        <br>
+       
+    </div>
+
+</div>
